@@ -978,6 +978,10 @@ main .contenedor-total .contenedor-precio .fa-tag{
 }
 
 
+/*----------seccion de listado de productos-----------*/
+main .container-products .products-items img{
+  width: 150px;
+}
 
 
 
