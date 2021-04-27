@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express()
 const path = require('path');
+const port = 3000
+const puerto = process.env.PORT
+
 app.use(express.static('public'));
 
 const homeRouter = require('./routes/homeRouter');
@@ -11,8 +14,8 @@ const carritoRouter = require('./routes/carritoRouter');
 
 app.set('view engine', 'ejs')
 
-app.listen(3000, () => {
-    console.log('Servidor funcionando');
+app.listen(puerto || 3000, function() {
+    console.log("Servidor corriendo en el puerto 3000");
 });
 
 app.use('/', homeRouter);
