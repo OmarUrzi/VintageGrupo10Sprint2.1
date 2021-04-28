@@ -23,3 +23,4 @@ app.use('/productos', productRouter);
 app.use('/registro', registerRouter);
 app.use('/inicio-sesion', inicioSesionRouter);
 app.use('/carrito', carritoRouter);
+
