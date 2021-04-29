@@ -75,10 +75,10 @@
                 <section class="grilla">
                     <h2 id="buscado">Lo más buscado</h2>
                     <div class="gallery-container">
-                        <% products.forEach( products => { %>
-                            <%- include('partials/product', {products}) %>
-                       <% }) %>
-                        
+                        <% productos.forEach( producto => { %>
+                            <%- include('partials/product', {productos}) %>
+                                <% }) %>
+
                     </div>
                 </section>
                 <section class="publicidad">
